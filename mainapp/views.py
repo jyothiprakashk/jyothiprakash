@@ -16,5 +16,5 @@ def projects(request):
 
 
 def contact(request):
-    return render(request,'mianapp/contact.html')
+    return render(request,'mainapp/contact.html')
     

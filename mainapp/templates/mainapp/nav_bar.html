@@ -1,0 +1,78 @@
+{% load static %}
+ <!-- Navbar -->
+     <!--top nav-bar  -->
+<nav class="nav-first">
+  <div class="nav-head">Portfolio</div>
+    <ul>
+        
+        <li
+        {% if 'home' in request.path %}
+            class="active"
+          {% else %}   
+             class="nav-item mr-3"
+          {% endif %}
+        ><a href="{% url 'home' %}">Home</a>
+        </li>
+        <li
+        {% if 'about' in request.path %}
+            class="active"
+          {% else %}   
+             class="nav-item mr-3"
+          {% endif %}
+        ><a href="{% url 'about' %}">About</a></li
+            >
+        <li
+        {% if 'projects' in request.path %}
+             class="nav-item active mr-3"
+          {% else %}   
+             class="nav-item mr-3"
+          {% endif %}
+        ><a href="{% url 'projects' %}">Projects</a></li
+            >
+        <li
+        {% if 'contact' in request.path %}
+            class="active"
+          {% else %}   
+             class="nav-item mr-3"
+          {% endif %}
+        ><a href="{% url 'contact' %}">Contact</a></li
+            >
+    </ul>
+</nav>    
+<!-- bottom nav-bar -->
+<nav class="nav-bottom">
+    <ul>
+        <li
+        {% if 'home' in request.path %}
+            class="active"
+          {% else %}   
+             class="nav-item mr-3"
+          {% endif %}
+        ><a href="{% url 'home' %}" ><i class="fas fa-home li-bottom"></i></a></li
+            >
+        <li
+        {% if 'about' in request.path %}
+            class="active"
+          {% else %}   
+             class="nav-item mr-3"
+          {% endif %}
+        ><a href="{% url 'about' %}"><i class="fas fa-search li-bottom"></i></a></li
+            >
+        <li
+        {% if 'projects' in request.path %}
+            class="active"
+          {% else %}   
+             class="nav-item mr-3"
+          {% endif %}
+        ><a href="{% url 'projects' %}"><i class="fas fa-list li-bottom"></i></a></li
+            >
+        <li
+        {% if 'contact' in request.path %}
+            class="active"
+          {% else %}   
+             class="nav-item mr-3"
+          {% endif %}
+        ><a href="{% url 'contact' %}"><i class="fas fa-user-circle li-bottom"></i></a></li
+            >
+    </ul>
+</nav>

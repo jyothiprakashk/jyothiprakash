@@ -46,5 +46,5 @@ Werkzeug==0.15.5
 whitenoise==5.0.1
 
 wrapt==1.11.2
-xkit==0.0.0
+
 zope.interface==4.3.2

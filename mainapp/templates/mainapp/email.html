@@ -2,11 +2,11 @@
 <form method="post">
     {% csrf_token %}
     <div class="email-message">
-      <label for="id_subject">Email email:</label>
-        {{ form.Enter_email }}
+      <label for="id_subject">Name:</label>
+        {{ form.name }}
       <div class="p-element">
-        <label for="id_subject">Email email:</label>
-        {{ form.Enter_email }}
+        <label for="id_subject">Enter Email:</label>
+        {{ form.from_mail }}
         <label for="id_subject">subject:</label>
         {{ form.subject }}
       </div>

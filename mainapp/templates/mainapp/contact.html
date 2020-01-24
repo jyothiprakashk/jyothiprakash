@@ -1,9 +1,10 @@
 {% extends "mainapp/index.html" %}
 
 {% block content %}
+<div class="big-screen-contact"> Contact Me</div>
 <div class="contact-page">
+    <div class="contact-head">Contact Me</div>
     <div class="contact-1">
-        contact me
         {% include "mainapp/email.html" %}
     </div>
     <div class="contact-2">
@@ -23,6 +24,9 @@
         </div>
     </div>
 </div>
+{% include 'mainapp/footer-icons.html' %}
+
+{% include 'mainapp/footer.html' %}
 
 
 

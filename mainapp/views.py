@@ -16,10 +16,9 @@ def about(request):
 
 
 def projects(request):
-    data=Portfolio.objects.all()
-    print(data)
+    movie=Portfolio.objects.all()
     context= {
-        "data":data
+        "movie": movie
     }
     return render(request,'mainapp/projects.html',context)
 

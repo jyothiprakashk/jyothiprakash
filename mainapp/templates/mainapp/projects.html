@@ -1,0 +1,20 @@
+{% extends "mainapp/index.html" %}
+
+{% block content %}
+<div class="projects-head">Projects</div>
+{% for details in data %}
+    <div class="projects-data">
+        <h2>{{ details.title }}</h2>
+        <p> {{ details.data }}</p>
+        <p><span>Tools: </span>{{ details.tools }}</p>
+        <a href="{{ details.live_demo }}">Live Demo</a>
+        <a href="{{ details.source_code }}" class="source-code">Source Code</a>
+    </div>
+</div>
+{% endfor %}
+{% include 'mainapp/footer-icons.html' %}
+
+{% include 'mainapp/footer.html' %}
+
+
+{% endblock content %}

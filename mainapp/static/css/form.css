@@ -186,17 +186,33 @@ body {
     border-radius: 50%;
     overflow: hidden;
     position: relative;
+    margin-bottom: 20px;
    
 
 }
 .footer-icons li a .fab{
     position: relative;
     transition: 1s;
-    /* color: #262626; */
+    color: #262626;
     font-size: 32px;
-    background-color: beige;
+    /* background-color: beige; */
     border-radius: 50%;
 }
+.footer-icons li a .fa-github {
+    color: white;
+    background-color: black;
+}
+.footer-icons li a .fa-free-code-camp {
+    color: green;
+}
+.footer-icons li a .fa-twitter {
+    color: #00aced;
+}
+.footer-icons li a .fa-linkedin-in {
+    color: #007bb6;
+
+}
+
 .footer-icons li a:hover .fab{
     transform: rotate(360deg);
 }
@@ -216,10 +232,10 @@ body {
     top:0;
 }
 .footer-icons li:nth-child(1) a:before {
-    background: #3b5999;
+    background: black;
 }
 .footer-icons li:nth-child(2) a:before {
-    background: #f2c5;
+    background: green;
 }
 .footer-icons li:nth-child(3) a:before {
     background: #55acee;
@@ -240,8 +256,8 @@ body {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    position: fixed;
-    bottom: 0;
+    /* position: absolute; */
+    bottom: 2;
     z-index: 100;
     width: 100%;
 }
@@ -249,18 +265,194 @@ body {
     margin-right: 5px;
     margin-top: 2px;
 }
-.author {
+span {
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: row;
+}
+.author {
     color: black;
-    bottom: 0;
-    z-index: 100%;
-    width: 100%;
-    z-index: 100;
-    position: fixed;
     margin-left: -40px;
+    margin-bottom: 20px;
+    margin-left: 300px;
 
 }
+
+/* About page */
+.about-container {
+    margin-left: 15%;
+    margin-top: 21px;
+}
+.about-head {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 27px;
+    color: green;
+}
+.about-head-1 {
+    color: green;
+    font-size: 25px;
+    
+}
+.about-data {
+    color: black;
+    font-size: 18px;
+}
+.knowledgable {
+    color: green;
+    font-size: 25px;
+    margin-top: 20px;
+}
+.knowledgable ul li{
+    color: black;
+    font-size: 20px;
+    margin-left: 20px;
+    padding: 5px;
+}
+
+/* Projects css */
+
+.projects-head {
+    color: green;
+    font-size: 25px;
+    margin-top: 30px;
+    margin-left: 15%;
+}
+.projects-data {
+    color: green;
+    border-style: solid;
+    /* display: flex;
+    flex-direction: column;
+    align-items: center; */
+    /* margin-top: 40px; */
+    color: black;
+    border: 1px solid gray;
+    border-radius: 5px;
+    width: 75%;
+    margin-left: 15%;
+    margin-top: 20px;
+
+}
+.projects-data h2 {
+    color: green;
+    font-size: 25px;
+    margin-left: 1%;
+    margin-top: 1%;
+    
+}
+.projects-data p {
+    font-size: 23px;
+    color: black;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-family: 'Kanit', sans-serif;
+    margin-left: 2%;
+}
+.projects-data a {
+    color: #00aced;
+    text-decoration: indianred;
+    font-size: 25px;
+    font-family: 'Kanit', sans-serif;
+    margin-left: 2%;
+
+}
+.projects-data .source-code {
+    float: right;
+    margin-right: 2%;
+}
+.projects-data p span {
+    color: green;
+}
+
+
+/* contact page */
+.contact-page {
+    display: flex;
+    flex-direction: row;
+    margin-top: 3%;
+    /* font-size: 30px; */
+}
+.contact-1 {
+    display: flex;
+    flex: 1.5;
+    color: green;
+    font-size: 32px;
+    margin-left: 100px;
+}
+
+
+.contact-2 {
+    flex: 1;
+    font-size: 15px;
+    color: black;
+    /* margin-right: -300px; */
+
+}
+
+.contact-2 .email {
+    margin-bottom: -0px;
+
+}
+.contact-2 .color {
+    color: red;
+    margin-bottom: -0px;
+   
+}
+.contact-2 .email-head {
+    margin-bottom: 15px;
+}
+.p {
+    margin-bottom: -0px;
+}
+
+/* email sending */
+.email-message {
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+    margin-left: -100px;
+    font-size: 15px;
+}
+input {
+    display: flex;
+    flex-direction: column;
+    margin-left: 30px;
+    /* color: red; */
+    border: 2px solid white;
+    border-radius: 10px;
+    background-color: lightgray;
+}
+.email-message p {
+    display: flex;
+    flex-direction: row;
+}
+textarea {
+    overflow: auto;
+    resize: vertical;
+    display: flex;
+    border: 1px solid;
+    height: 100px;
+    border-radius: 10px;
+    margin-left: 30px;
+    background-color: lightgray;
+}
+.button {
+    background-color: forestgreen;
+    color: white;
+    border-radius: 10px;
+    float: right;
+    height: 45px;
+    width: 100px;
+    font-size: 22px;
+
+}
+label {
+    color: crimson;
+}
+.p-element {
+    display: flex;
+    flex-direction: row;
+}
+
 /* media queries */
 @media (max-width: 900px) {
 

@@ -1,0 +1,19 @@
+
+<form method="post">
+    {% csrf_token %}
+    <div class="email-message">
+      <label for="id_subject">Email email:</label>
+        {{ form.Enter_email }}
+      <div class="p-element">
+        <label for="id_subject">Email email:</label>
+        {{ form.Enter_email }}
+        <label for="id_subject">subject:</label>
+        {{ form.subject }}
+      </div>
+      <label for="id_subject">message:</label>
+         {{ form.message }}
+    </div>
+    <div class="form-actions">
+      <button type="submit" class="button">Send</button>
+    </div>
+</form>

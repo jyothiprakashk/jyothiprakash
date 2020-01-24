@@ -1,0 +1,30 @@
+{% extends "mainapp/index.html" %}
+
+{% block content %}
+<div class="contact-page">
+    <div class="contact-1">
+        contact me
+        {% include "mainapp/email.html" %}
+    </div>
+    <div class="contact-2">
+        <div class="email-head">
+            <p class="email color">EMAIL:</p>
+            <p class="email">Jyothiprakash097@gmail.com</p>
+        </div>
+        <div class="telephone-head">
+            <p class="telephone color">TELEPHONE</p>
+            <p class="telephone">8309920412</p>
+        </div>
+        <div class="">
+            <p class="color">Address</p>
+            <p class="p">Sreenivasa nagar,</p>
+            <p class="p">Chennai,</p>
+            <p class="p">600073</p>
+        </div>
+    </div>
+</div>
+
+
+
+
+{% endblock content %}

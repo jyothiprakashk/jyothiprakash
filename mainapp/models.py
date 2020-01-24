@@ -5,8 +5,8 @@ class Portfolio(models.Model):
     data=models.TextField()
     live_demo=models.URLField()
     source_code=models.URLField()
-    tools=models.TextField()
-    date = models.DateTimeField(default=datetime.now, blank=True)
+    # tools=models.TextField()
+    # date = models.DateTimeField(default=datetime.now, blank=True)
     def __str__(self):
         return self.title
         

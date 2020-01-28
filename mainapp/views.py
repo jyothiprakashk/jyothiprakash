@@ -34,7 +34,7 @@ def contact(request):
             from_mail = form.cleaned_data['from_mail']
             message = form.cleaned_data['message']
             try:
-                send_mail(subject, message, from_mail, ['jyothi.prakash@intainft.com'],fail_silently=False)
+                send_mail(subject, 'Hello ' + name + ',\n'+ from_mail + ',\n' + message, from_mail, ['jyothi.prakash@intainft.com'],fail_silently=False)
             except BadHeaderError:
                 return HttpResponse('Invalid header found.')
             return redirect('success')
@@ -43,4 +43,4 @@ def contact(request):
     
 
 def successView(request):
-    return HttpResponse('Success! Thank you for your message.')
+    return render(request,"mainapp/success.html")

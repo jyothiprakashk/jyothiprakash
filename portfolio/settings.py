@@ -9,7 +9,7 @@ https://docs.djangoproject.com/en/3.0/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/3.0/ref/settings/
 """
-import django_heroku
+# import django_heroku
 import os
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
@@ -81,7 +81,7 @@ DATABASES = {
     }
 }
 
-django_heroku.settings(locals())
+# django_heroku.settings(locals())
 
 # Password validation
 # https://docs.djangoproject.com/en/3.0/ref/settings/#auth-password-validators
@@ -118,8 +118,8 @@ USE_TZ = True
 EMAIL_USE_TLS = True
 EMAIL_HOST = 'smtp.gmail.com'
 DEFAULT_FROM_EMAIL = 'Jyothi Prakash'
-EMAIL_HOST_USER = 'jyothi.prakash@intainft.com'
-EMAIL_HOST_PASSWORD = 'jyothi@12'
+EMAIL_HOST_USER = 'jyothiprakash097@gmail.com'
+EMAIL_HOST_PASSWORD = '9704703078amma'
 EMAIL_PORT = 587
 
 # Static files (CSS, JavaScript, Images)

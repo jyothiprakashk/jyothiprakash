@@ -24,20 +24,25 @@ def projects(request):
 
 
 def contact(request):
+   
     if request.method == 'GET':
         form = ContactForm()
     else:
         form = ContactForm(request.POST)
-        if form.is_valid():
-            subject = form.cleaned_data['subject']
-            name = form.cleaned_data['name']
-            from_mail = form.cleaned_data['from_mail']
-            message = form.cleaned_data['message']
-            try:
-                send_mail(subject, 'Hello ' + name + ',\n'+ from_mail + ',\n' + message, from_mail, ['jyothi.prakash@intainft.com'],fail_silently=False)
-            except BadHeaderError:
-                return HttpResponse('Invalid header found.')
-            return redirect('success')
+        try:
+            if form.is_valid():
+                subject = form.cleaned_data['subject']
+                name = form.cleaned_data['name']
+                from_mail = form.cleaned_data['from_mail']
+                message = form.cleaned_data['message']
+            
+                try:
+                    send_mail(subject, 'Hello ' + name + ',\n'+ from_mail + ',\n' + message, from_mail, ['jyothiprakash097@gmail.com'],fail_silently=True)
+                except BadHeaderError:
+                    return HttpResponse('In/contactvalid header found.')
+                return redirect('success')
+        except:
+            return HttpResponse("Mail is Not Working Properly")
     return render(request, "mainapp/contact.html", {'form': form})
 
     

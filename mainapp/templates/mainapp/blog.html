@@ -1,0 +1,34 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   
+</head>
+<body>
+    
+    <dev-widget data-username="jyothiprakash"></dev-widget>
+    <script src="https://unpkg.com/dev-widget@^1/dist/card.component.min.mjs" type="module"></script>
+</body>
+</html> -->
+{% extends "mainapp/index.html" %}
+
+{% block content %}
+<div class="blog">Blog</div>
+
+<dev-widget data-username="jyothiprakash"></dev-widget>
+    <script src="https://unpkg.com/dev-widget@^1/dist/card.component.min.mjs" type="module"></script>
+    <div class="comment">
+        <p>Hey guys!!! check out my blog and say hii in comments section and let's get touch with me and give some feedback so that i will learn something from you guys.</p>
+    </div>
+    <div class="dummy projects-margin">
+        <a href="{% url 'home' %}" class="gohome"><i class="fas fa-long-arrow-alt-left"></i>Go Home</a>
+    </div>
+    
+{% include 'mainapp/footer-icons.html' %}
+
+{% include 'mainapp/footer.html' %}
+
+
+{% endblock content %}

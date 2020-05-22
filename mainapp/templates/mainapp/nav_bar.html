@@ -3,17 +3,17 @@
      <!--top nav-bar  -->
 <div class="jp-portfolio">JP Portfolio</div>
 <nav class="nav-first">
-  <div class="nav-head">Portfolio</div>
+  <a class="nav-head" href="{% url 'home' %}">Jp! Portfolio</a>
     <ul>
         
-        <li
+        <!-- <li
         {% if 'home' in request.path %}
             class="active"
           {% else %}   
              class="nav-item mr-3"
           {% endif %}
         ><a href="{% url 'home' %}">Home</a>
-        </li>
+        </li> -->
         <li
         {% if 'about' in request.path %}
             class="active"
@@ -22,6 +22,7 @@
           {% endif %}
         ><a href="{% url 'about' %}">About</a></li
             >
+           
         <li
         {% if 'projects' in request.path %}
              class="nav-item active mr-3"
@@ -30,6 +31,14 @@
           {% endif %}
         ><a href="{% url 'projects' %}">Projects</a></li
             >
+            <li
+            {% if 'blog' in request.path %}
+                class="active"
+              {% else %}   
+                 class="nav-item mr-3"
+              {% endif %}
+            ><a href="{% url 'blog' %}">Blog</a></li
+                >
         <li
         {% if 'contact' in request.path %}
             class="active"
@@ -43,14 +52,7 @@
 <!-- bottom nav-bar -->
 <nav class="nav-bottom">
     <ul>
-        <li
-        {% if 'home' in request.path %}
-            class="active"
-          {% else %}   
-             class="nav-item mr-3"
-          {% endif %}
-        ><a href="{% url 'home' %}" ><i class="fas fa-home li-bottom"></i></a></li
-            >
+        
         <li
         {% if 'about' in request.path %}
             class="active"
@@ -59,6 +61,7 @@
           {% endif %}
         ><a href="{% url 'about' %}"><i class="fab fa-autoprefixer li-bottom"></i></a></li
             >
+           
         <li
         {% if 'projects' in request.path %}
             class="active"
@@ -66,6 +69,14 @@
              class="nav-item mr-3"
           {% endif %}
         ><a href="{% url 'projects' %}"><i class="fas fa-project-diagram li-bottom"></i></a></li
+            >
+            <li
+        {% if 'blog' in request.path %}
+            class="active"
+          {% else %}   
+             class="nav-item mr-3"
+          {% endif %}
+        ><a href="{% url 'blog' %}" ><i class="fab fa-blogger-b li-bottom"></i></a></li
             >
         <li
         {% if 'contact' in request.path %}

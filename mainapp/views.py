@@ -49,3 +49,6 @@ def contact(request):
 
 def successView(request):
     return render(request,"mainapp/success.html")
+
+def blog(request):
+    return render(request,"mainapp/blog.html")

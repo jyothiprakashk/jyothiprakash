@@ -542,15 +542,13 @@ label {
         font-size: 15px;
     }
     .jp-portfolio {
-        text-align: center;
-        margin-bottom: -30px;
-        background-color: palevioletred;
-        color: white;
-        height: 35px;
-        padding-top: 4px;
+    margin-bottom: -30px;
+    color: black;
+    padding-top: 4px;
     font-size: 19px;
-        font-family: 'Pacifico', cursive;
-        box-shadow: 5px 10px 18px #888888;
+    font-size: 25px;
+    margin-left: 15px;
+    color: #2A9FD6;
     }
     .p-element {
         display: flex;
@@ -610,6 +608,9 @@ label {
     /* .footer-mobile {
         display: block;
     } */
+    .blog {
+        margin-top: 45px !important;
+    }
 }
 @media (min-width: 900px) {
     .jp-portfolio {

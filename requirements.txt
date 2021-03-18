@@ -11,7 +11,7 @@ Cython==0.29.13
 
 
 dj-database-url==0.5.0
-Django==3.0.2
+Django==3.1.6
 django-heroku==0.3.1
 
 
